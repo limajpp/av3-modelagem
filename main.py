@@ -1,14 +1,17 @@
 from ortools.linear_solver import pywraplp 
 from core.gerador_padroes import gerar_padroes as gp
 from core.filtrador_padroes import filtrar_padroes as fp
+from utils.txt_input_reader import dados_lidos as data
 
 def main():
-    tam_barra = 150
-    tam_cortes = [80, 60, 50]
-
+    tam_barra = data["tam_barra"]
+    tam_cortes = [item["tamanho"] for item in data["itens"]]
+    demandas = [item["demanda"] for item in data["itens"]]
+    
     print(f"--- Configuração ---")
     print(f"Tamanho da Barra: {tam_barra}")
-    print(f"Demandas de Corte: {tam_cortes}\n")
+    print(f"Tamanhos de Corte: {tam_cortes}")
+    print(f"Demandas: {demandas}\n")
 
     print("Gerando padrões possíveis...")
     padroes_brutos = gp(tam_barra, tam_cortes)
