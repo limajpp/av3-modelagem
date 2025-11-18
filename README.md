@@ -2,7 +2,7 @@
 
 ## 🚀 Getting Started
 
-To run this project, it is recommended to use a virtual environment.
+To run this project, it is recommended to use a virtual environment. After clonning the repo, in the project root folder, follow the steps below:
 
 ### 1. Create the Virtual Environment
 ```Shell
@@ -32,4 +32,5 @@ pip install -r requirements.txt
 ```Shell
 python3 main.py
 ```
+
 
