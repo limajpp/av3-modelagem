@@ -1,6 +1,4 @@
-# Project Title
-
-Problema de Corte de Barras
+# Problema de Corte de Barras
 
 ## 🚀 Getting Started
 
@@ -34,3 +32,4 @@ pip install -r requirements.txt
 ```Shell
 python3 main.py
 ```
+
